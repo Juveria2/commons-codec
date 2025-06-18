@@ -234,16 +234,8 @@ limitations under the License.
       <plugin>
         <groupId>org.pitest</groupId>
         <artifactId>pitest-maven</artifactId>
-        <version>1.15.2</version> <!-- use latest available -->
-        <configuration>
-          <testPlugin>junit5</testPlugin>
-          <targetClasses>
-            <param>C:\Users\Muhammad Ibrahim\IdeaProjects\commons-codec\src\main\java\org\apache\commons\codec</param> <!-- your actual package -->
-          </targetClasses>
-          <targetTests>
-            <param>C:\Users\Muhammad Ibrahim\IdeaProjects\commons-codec\target\classes\org\apache\commons\codec</param> <!-- your actual test package -->
-          </targetTests>
-        </configuration>
+        <version>1.19.5</version> <!-- use latest available -->
+
       </plugin>
 
     </plugins>
