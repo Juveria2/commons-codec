@@ -73,6 +73,14 @@ limitations under the License.
       <artifactId>junit-jupiter-engine</artifactId>
       <scope>test</scope>
     </dependency>
+
+    <dependency>
+      <groupId>org.pitest</groupId>
+      <artifactId>pitest-junit5-plugin</artifactId>
+      <version>1.2.1</version> <!-- check for latest -->
+      <scope>test</scope>
+    </dependency>
+
     <dependency>
       <groupId>org.junit.jupiter</groupId>
       <artifactId>junit-jupiter-params</artifactId>
@@ -223,6 +231,21 @@ limitations under the License.
           </execution>
         </executions>
       </plugin>
+      <plugin>
+        <groupId>org.pitest</groupId>
+        <artifactId>pitest-maven</artifactId>
+        <version>1.15.2</version> <!-- use latest available -->
+        <configuration>
+          <testPlugin>junit5</testPlugin>
+          <targetClasses>
+            <param>C:\Users\Muhammad Ibrahim\IdeaProjects\commons-codec\src\main\java\org\apache\commons\codec</param> <!-- your actual package -->
+          </targetClasses>
+          <targetTests>
+            <param>C:\Users\Muhammad Ibrahim\IdeaProjects\commons-codec\target\classes\org\apache\commons\codec</param> <!-- your actual test package -->
+          </targetTests>
+        </configuration>
+      </plugin>
+
     </plugins>
   </build>
   <reporting>
