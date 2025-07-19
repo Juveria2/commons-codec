@@ -252,6 +252,19 @@ limitations under the License.
         </configuration>
       </plugin>
       <plugin>
+        <groupId>org.apache.rat</groupId>
+        <artifactId>apache-rat-plugin</artifactId>
+        <version>0.15</version>
+        <configuration>
+          <excludes>
+            <!-- Add patterns for files to exclude -->
+            <exclude>**/*.json</exclude>
+            <exclude>**/target/**</exclude>
+            <!-- Add other file patterns you need to exclude -->
+          </excludes>
+        </configuration>
+      </plugin>
+      <plugin>
         <groupId>org.pitest</groupId>
         <artifactId>pitest-maven</artifactId>
         <version>1.15.3</version>
